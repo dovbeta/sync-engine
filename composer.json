@@ -1,0 +1,30 @@
+{
+    "name": "esg/sync-engine",
+    "description": "This is for client data loading",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roman Dovbeta",
+            "email": "r.dovbeta@abtollc.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "ESG\\SyncEngine\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ESG\\SyncEngine\\ServiceProvider"
+            ]
+        }
+    }
+}
