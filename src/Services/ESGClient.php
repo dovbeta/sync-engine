@@ -53,7 +53,7 @@ class ESGClient
                 'headers' => [
                     'Content-Type' => 'application/json',
                     'Accept'     => 'application/json',
-                    'tenantId'      => config('esg.tenant_id'),
+                    'tenantId'      => config('sync.tenant_id'),
                     'Authorization' => 'Bearer ' . $this->token,
                 ],
                 RequestOptions::JSON => $data
